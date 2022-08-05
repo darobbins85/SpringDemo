@@ -28,7 +28,13 @@ public class StudentConfig {
                     LocalDate.of(1995, JANUARY, 1)
             );
 
-            repository.saveAll(List.of(david, alex));
+            Student whitney = new Student(
+                    "Whitney",
+                    "whit@apple.com",
+                    LocalDate.of(1990, DECEMBER, 9)
+            );
+
+            repository.saveAll(List.of(david, alex, whitney));
         };
     }
 }
